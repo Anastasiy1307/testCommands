@@ -1,0 +1,6 @@
+$(eval const randomChatter = '$(urlfetch https://commands.garretcharp.com/twitch/chatter/$(channel))';
+while(randomChatter == "nightbot" || randomChatter == "jeetbot" || randomChatter == "moobot" || randomChatter == "streamelements")
+{
+  $(eval const randomChatter = '$(urlfetch https://commands.garretcharp.com/twitch/chatter/$(channel))';
+}
+const responses = [`банку темного пива `, `банку светлого пива `, `два бокала красного вина `, `два бокала белого вина `, `портвейн `, `два коктейля зеленая фея `, `два бокала вина хоббитов `, `сет шотов Би-52 `, `коньяк `, `виски`]; `$(user) несет ${responses[Math.floor(Math.random() * responses.length)]} и предлагает ${randomChatter} выпить вместе`)
